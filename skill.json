@@ -1,0 +1,33 @@
+{
+  "name": "genpark-speech-filler-word-remover-cleaner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Transcript timestamp-aligned speech filler word identification and seamless cross-fade audio cutlist generator.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "descript",
+    "cleanvoice",
+    "filler-words",
+    "audio-cleaner",
+    "speech-processing"
+  ],
+  "inputs": {
+    "transcript_segments": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "cleaner_run_id": {
+      "type": "string"
+    },
+    "fillers_detected_count": {
+      "type": "integer"
+    },
+    "total_filler_duration_sec": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
